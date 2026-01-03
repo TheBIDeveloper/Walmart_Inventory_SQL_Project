@@ -1,67 +1,85 @@
-Walmart-Sales-Data-Analysis--SQL-Project
-About
-We are analyzing Walmart's sales data to identify high-performing branches and products, analyze the sales patterns of various products, and understand customer behavior. The primary objective is to enhance and optimize sales strategies. The dataset utilized in this project is sourced from the Kaggle Walmart Sales Forecasting Competition.
+# Walmart Inventory Analytics – SQL Project
 
-Purposes of the Project
-The main goal of this project is to gain an understanding of Walmart's sales data, exploring the various factors that influence sales across different branches.
+## 📌 Project Overview
+This project focuses on analyzing Walmart inventory data using **SQL Server** to improve stock management, demand forecasting, and supply chain efficiency.  
+The analysis helps identify low-stock risks, overstock issues, fast-moving products, and warehouse-level performance.
 
-About Data
-This project's data was obtained from the Kaggle Walmart Sales Forecasting Competition and it encompasses sales transactions from three Walmart branches in Mandalay, Yangon, and Naypyitaw, respectively. The data contains 17 columns and 1000 rows:
+---
 
+## 🎯 Problem Statement
+Walmart manages a large-scale inventory across multiple warehouses and product categories.  
+Poor inventory control can lead to:
+- Stockouts and lost sales  
+- Overstocking and increased holding costs  
+- Inefficient warehouse utilization  
 
-Analysis List:
-Product Analysis
-Perform an analysis of the data to gain insights into different product lines, determine the top-performing product lines, and identify areas for improvement in other product lines.
+This project answers key business questions using SQL analytics to optimize inventory decisions.
 
-Sales Analysis
-The objective of this analysis is to address the inquiry regarding the sales trends of the product. The outcomes of this analysis can assist in evaluating the efficiency of each applied sales strategy in the business and determining necessary modifications to increase sales.
+---
 
-Customer Analysis
-This analysis is focused on identifying various customer segments, understanding purchasing trends, and evaluating the profitability associated with each of these customer segments.
+## 🗂 Dataset Description
+The dataset represents Walmart’s inventory operations and includes:
 
-Approach Used
-Data Wrangling
+- Products  
+- Categories  
+- Warehouses  
+- Stock levels  
+- Inventory movements (inbound & outbound)  
+- Reorder levels  
 
-During this initial phase, the data is examined to detect any NULL or missing values, and strategies for data replacement are implemented to address and substitute these values effectively.
+The data is designed to simulate real-world retail inventory scenarios.
 
-Build a database
-Create a table and insert the data.
-Select columns with null values in them. Null values are not present in our database because, in creating the tables, NOT NULL was specified for each field, effectively filtering out any null values.
+---
 
-Exploratory Data Analysis (EDA)
+## 🛠 Tools & Technologies
+- SQL Server  
+- T-SQL  
+- Window Functions  
+- Common Table Expressions (CTEs)  
+- Aggregate & Analytical Queries  
 
-I think conducting exploratory data analysis is essential to address the project's listed questions and objectives.
+---
 
-Business Questions to Answer
-Generic Questions
-How many distinct cities are present in the dataset?
-In which city is each branch situated?
-Product Analysis
-How many distinct product lines are there in the dataset?
-What is the most common payment method?
-What is the most selling product line?
-What is the total revenue by month?
-Which month recorded the highest Cost of Goods Sold (COGS)?
-Which product line generated the highest revenue?
-Which city has the highest revenue?
-Which product line incurred the highest VAT?
-Retrieve each product line and add a column product_category, indicating 'Good' or 'Bad,' based on whether its sales are above the average.
-Which branch sold more products than the average product sold?
-What is the most common product line by gender?
-What is the average rating of each product line?
-Sales Analysis
-Number of sales made at each time of the day per weekday
-Identify the customer type that generates the highest revenue.
-Which city has the largest tax percentage/ VAT (Value Added Tax)?
-Which customer type pays the most VAT?
-Customer Analysis
-How many unique customer types does the data have?
-How many unique payment methods does the data have?
-Which is the most common customer type?
-Which customer type buys the most?
-What is the gender of most of the customers?
-What is the gender distribution per branch?
-Which time of the day do customers give the most ratings?
-Which time of the day do customers give the most ratings per branch?
-Which day of the week has the best average ratings?
-Which day of the week has the best average ratings per branch?
+## 📊 Key Business Questions Answered
+- Which products are frequently out of stock?  
+- Which categories generate the highest inventory movement?  
+- Which warehouses face the most stock shortages?  
+- What products need immediate reordering?  
+- How efficient is inventory turnover across categories?  
+- Which items are overstocked and underutilized?
+
+---
+
+## 📈 SQL Skills Demonstrated
+- Database & table design  
+- Complex joins (INNER, LEFT)  
+- Aggregations (SUM, AVG, COUNT)  
+- Window functions (RANK, ROW_NUMBER)  
+- Inventory threshold analysis  
+- Business-focused SQL problem solving  
+
+---
+
+## 📂 Project Workflow
+1. Database and table creation  
+2. Data insertion and validation  
+3. Inventory analysis using SQL queries  
+4. Advanced analytical insights  
+5. Business-focused summary of findings  
+
+---
+
+## 📊 Key Analysis Performed
+- Stock level monitoring  
+- Reorder point detection  
+- Warehouse-wise inventory distribution  
+- Product demand analysis  
+- Category-level stock movement  
+- Inventory efficiency evaluation  
+
+---
+
+## 👤 Author
+**Akshay Kalamkar**  
+Power BI Developer | SQL | Data Analytics  
+🌐 Portfolio: https://thebideveloper.netlify.app/
